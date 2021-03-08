@@ -1,0 +1,36 @@
+{
+  "name": "@supmount/babel-plugin-module-to-commonjs",
+  "version": "1.0.0",
+  "description": "Converts Module to CommonJS",
+  "main": "babel-plugin-module-to-commonjs.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx mocha -t 10000 --exit --bail *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austundag/babel-plugin-module-to-commonjs.git"
+  },
+  "keywords": [
+    "babel",
+    "plugin",
+    "commonjs",
+    "module",
+    "transform"
+  ],
+  "author": "Afsin Ustundag",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/austundag/babel-plugin-module-to-commonjs/issues"
+  },
+  "homepage": "https://github.com/austundag/babel-plugin-module-to-commonjs#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "chai": "^4.3.0",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.3.1"
+  }
+}

@@ -1,0 +1,4 @@
+{
+    "sourceType": "module",
+    "plugins": ["./babel-plugin-module-to-commonjs.js"]
+}

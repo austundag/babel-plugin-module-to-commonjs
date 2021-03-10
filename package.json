@@ -5,7 +5,8 @@
   "main": "babel-plugin-module-to-commonjs.js",
   "type": "module",
   "scripts": {
-    "test": "npx mocha -t 10000 --exit --bail *.js"
+    "test": "npx mocha -t 10000 --exit --bail *.js",
+    "beautify": "npx eslint ./*.js test/*.js --fix"
   },
   "repository": {
     "type": "git",

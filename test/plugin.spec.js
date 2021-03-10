@@ -20,7 +20,7 @@ describe('module to commonjs unit tests', function moduleToCommonJsUnitTests() {
         description: 'basic export default class',
     }];
 
-    cases.forEach(({ code, expected, description}) => {
+    cases.forEach(({ code, expected, description }) => {
         it(description, async () => {
             const result = await babel.transformAsync(code, {
                 rootMode: 'upward',
@@ -49,13 +49,13 @@ describe('full file tests', function fullFileTests() {
     cases.forEach(({ description, fileroot }) => {
         it(description, async () => {
             const filepath = path.join(fixturePath, `${fileroot}.js`);
-            const code = await readFile(filepath, 'utf8' );
+            const code = await readFile(filepath, 'utf8');
             const result = await babel.transformAsync(code, {
                 rootMode: 'upward',
             });
 
             const expectedPath = path.join(fixturePath, `${fileroot}.expected.js`);
-            const expected = await readFile(expectedPath, 'utf8' );
+            const expected = await readFile(expectedPath, 'utf8');
 
             expect(result.code).to.equal(expected);
         });
